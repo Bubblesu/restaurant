@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Landing page for user registration.
+Página de uma loja online.
 
 - [Acesse o projeto finalizado, online](https://bubblesu.github.io/restaurant/)
 
