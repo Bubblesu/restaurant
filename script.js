@@ -32,3 +32,8 @@ function selectProduct(id) {
     window.location.href = "/pages/details/index.html?id="+id;
 }
 
+//ir para produtos
+function goToProducts(){
+    document.getElementById('trending').scrollIntoView({behavior: 'smooth'})
+}
+
