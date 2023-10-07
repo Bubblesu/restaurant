@@ -191,6 +191,7 @@ header.sticky{
 .row{
     position: relative;
     transition: all .40s;
+    cursor: pointer;
 }
 
 .row img{
