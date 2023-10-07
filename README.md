@@ -13,7 +13,7 @@ Projeto para mostrar meus conhecimentos aprendidos durante o curso Elas na_tech 
 <br>
 
 <p align="center">
-  <img alt="Registration Form" src=".github/capa.png" width="100%">
+  <img alt="Registration Form" src="/github/capa.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
