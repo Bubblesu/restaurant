@@ -1,0 +1,338 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+.logo img{
+  max-width: 200px;
+  height: 70px;
+}
+
+.navmenu{
+  display: flex;
+
+}
+
+.navmenu a{
+  color: #2c2c2c;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: all .42s ease;
+}
+
+.navmenu a:hover{
+  color: #EE1C47;
+
+}
+
+.nav-icon{
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon i{
+  margin-right: 20px;
+  color:#2c2c2c;
+  font-size: 25px;
+  font-weight: 400;
+  transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+  transform: scale(1.1);
+  color: #EE1C47;
+}
+
+#menu-icon{
+  font-size: 35px;
+  color:#2c2c2c;
+  z-index: 10001;
+  cursor: pointer; 
+}
+
+section{
+  padding: 5% 10%;
+}
+
+header.sticky{
+  background: #fff;
+
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+
+}
+
+@media(max-width:890px){
+  header{
+    padding: 20px 3%;
+    transition: .4s;
+  }
+}
+
+@media(max-width:630px){
+  .main-text h1{
+    font-size: 50px;
+    transition: .4s;
+  }
+
+  .main-text p{
+    font-size: 18px;
+    transition: .4s;
+  }
+
+  .main-btn{
+    padding: 10px 20px;
+    transition: .4s;
+  }
+}
+
+.navmenu a{
+  display: block;
+}
+
+.navmenu-open{
+  right: 0;
+}
+
+/* OUTRA PARTE */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  margin-top: 64px;
+
+  animation: fadeAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.image {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.image img {
+    width: 31rem;
+}
+
+.form {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #EE1C47;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #A60C2C;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #EE1C47;
+    margin:0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0; 
+
+  flex-direction: column;
+  z-index: 5;
+  padding-right: 5rem;
+  max-height: 10rem;
+  overflow-y: scroll;
+  flex-wrap: nowrap;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+
+}
+
+.input-box input{
+    margin: 0.6rem 0 0.6rem 0.2rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #efe2e5;
+}
+
+.input-box label,
+gender-tittle, h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000ce;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+
+    flex-direction: column;
+
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 0.5rem;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button { 
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #EE1C47;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #A60C2C;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.gender-inputs {
+  margin-top: 2rem;
+}
+
+.gender-group {
+  flex-direction: column;
+}
+
+.gender-title h6 {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+      display: none;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@keyframes fadeAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}

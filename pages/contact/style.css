@@ -1,0 +1,277 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+
+.logo img{
+  max-width: 200px;
+  height: 70px;
+}
+
+.navmenu{
+  display: flex;
+}
+
+.navmenu a{
+  color: #2c2c2c;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: all .42s ease;
+}
+
+.navmenu a:hover{
+  color: #EE1C47;
+}
+
+.nav-icon{
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon i{
+  margin-right: 20px;
+  color:#2c2c2c;
+  font-size: 25px;
+  font-weight: 400;
+  transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+  transform: scale(1.1);
+  color: #EE1C47;
+
+}
+
+#menu-icon{
+  font-size: 35px;
+  color:#2c2c2c;
+  z-index: 10001;
+  cursor: pointer; 
+}
+
+section{
+  padding: 5% 10%;
+
+}
+
+header.sticky{
+  background: #fff;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+@media(max-width:890px){
+  header{
+      padding: 20px 3%;
+      transition: .4s;
+  }
+}
+
+.navmenu a{
+  display: block;
+}
+
+.navmenu-open{
+  right: 0;
+}
+
+/* OUTRA  PARTE*/
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+
+  animation: fadeAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+
+.content .left-side .details i{
+  font-size: 30px;
+  color: #EE1C47;
+  margin-bottom: 10px;
+}
+
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #EE1C47;
+}
+
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box{
+  min-height: 110px;
+}
+
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #EE1C47;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #A60C2C;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+  }
+}
+
+@media (max-width: 820px) {
+  .container{
+    height: 90%;
+    margin-top: 64px;
+  }
+
+  .container .content{
+    flex-direction: column-reverse;
+  }
+
+  .container .content .left-side{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .left-side .details i{
+    font-size: 14px;
+    color: #EE1C47;
+  }
+
+  .content .left-side .details .topic{
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 8px;
+    color: #afafb6;
+    white-space: nowrap;
+  }
+
+  .container .content .left-side::before{
+    display: none;
+  }
+
+  .container .content .right-side{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@keyframes fadeAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiyaki Oriental</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="assets/logo2.png" alt=""></a>
+
+        <ul class="navmenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/about">Sobre</a></li>
+            <li><a href="/pages/contact">Contato</a></li>
+            <li><a href="/pages/careers">Trabalhe Conosco</a></li>
+
+        </ul>
+
+        <div class="nav-icon">
+            
+            <a href="#"><i class='bx bx-user'></i></a>
+            <a href="#"><i class='bx bx-cart'></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="product">
+        <div class="container">
+            <div class="left-side">
+                <div class="items">
+                    <div class="select-image">
+                        <img id="select-image" src="" alt="">
+                    </div>
+                    <div class="thumbnails">
+                        <div class="thumbnail">
+                            <img id="t-1" src="" alt="" onclick="changeImage('t-1')">
+                        </div>
+
+                        <div class="thumbnail">
+                            <img id="t-2" src="" alt="" onclick="changeImage('t-2')">
+                        </div>
+
+                        <div class="thumbnail">
+                            <img id="t-3" src="" alt="" onclick="changeImage('t-3')">
+                        </div>
+
+                        <div class="thumbnail">
+                            <img id="t-4" src="" alt="" onclick="changeImage('t-4')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="content">
+                    <h6>TAIYAKI RESTAURANT</h6>
+                    <h1 id="product-name"></h1>
+                    <p id="product-description"></p>
+                    <div class="prices">
+                        <span id="product-price" class="price"></span>
+                        <span id="product-off" class="off"></span>
+                    </div>
+                    <div class="options">
+                        <div class="amount">
+                            <div class="minus">
+                                <i class='bx bx-minus' ></i>
+                            </div>
+                            <span>0</span>
+                            <div class="plus" onclick="onClickProduct()">
+                                <i class='bx bx-plus'></i>
+                            </div>
+                        </div>
+    
+                        <a class="button"><i class='bx bx-cart' ></i>Adicionar ao carrinho</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="assets/logo2.png" alt="">
+                <p>Potato Chips - 123</p>
+                <p>Japan-JP</p>
+                <p>010101010101</p>
+                <p>restaurant@tayaiki.com</p>
+
+                <div class="socials-icon">
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </div>
+
+
+            <div class="second-info">
+                <h4>Suporte</h4>
+                <p>Contato</p>
+                <p>Sobre a página</p>
+                <p>Guia de tamanho</p>
+                <p>Venda e devolução</p>
+                <p>Privacidade</p>
+                <img class="payments" src="assets/checkout.avif" alt="">
+            </div>
+
+            <div class="third-info">
+                <h4>Shop</h4>
+                <p>Temaki</p>
+                <p>Café</p>
+                <p>Sorvetes</p>
+                <p>Biscoitos</p>
+            </div>
+
+            <div class="company">
+                <h4>Company</h4>
+                <p>Sobre</p>
+                <p>Blog</p>
+                <p>Afiliado</p>
+                <p>Login</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <div class="end-text">
+        <p>Copyright ©️ @2023. All Rights Reserved. Design By Lana Ramos.</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../../utils/header.js"></script>
+    
+</body>
+</html>
