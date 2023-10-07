@@ -1,4 +1,4 @@
-<h1 align="center"> Taiyaki Restaurante </h1>
+<h1 align="center"> Taiyaki Restaurant </h1>
 
 <p align="center">
 Projeto para mostrar meus conhecimentos aprendidos durante o curso Elas na_tech <br/>
