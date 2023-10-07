@@ -184,7 +184,9 @@ header.sticky{
 
 .products{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     gap: 2rem;
 }
 
