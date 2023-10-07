@@ -191,6 +191,9 @@ header.sticky{
 .row{
     position: relative;
     transition: all .40s;
+}
+
+.row:hover{
     cursor: pointer;
 }
 

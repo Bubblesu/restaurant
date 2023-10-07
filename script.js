@@ -29,7 +29,7 @@ function search() {
 
 //select product
 function selectProduct(id) {
-    window.location.href = "/pages/details/index.html?id="+id;
+    window.location.href = "./pages/details/index.html?id="+id;
 }
 
 //ir para produtos
